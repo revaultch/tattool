@@ -1,0 +1,10 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /api
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/tattool
+
+

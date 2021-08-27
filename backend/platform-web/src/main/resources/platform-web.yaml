@@ -1,0 +1,14 @@
+sessionProvider: ch.qarts.tattool.webplatform.platform.DefaultWebPlatformSessionProvider
+providerConfig:
+  options:
+    - --window-size=1920,1080
+    - --headless
+    - --incognito
+    - --enable-javascript
+    - --lang=en-GB
+    - --no-sandbox
+    - --disable-dev-shm-usage
+#sessionProvider: ch.qarts.tattool.webplatform.platform.RemoteWebPlatformSessionProvider
+#providerConfig:
+#  hubUrl: http://localhost:4444
+#  options: --window-size=1920,1080, window-size=1920,1080, --headless, --incognito,--enable-javascript,--lang=en-GB,--no-sandbox,--disable-dev-shm-usage,--remote-debugging-port=9222

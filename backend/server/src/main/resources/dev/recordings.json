@@ -1,0 +1,659 @@
+[
+  {
+    "id": "611e5da974fd525495bd09fa",
+    "name": "Google conversion test 1",
+    "description": "Convert from kmh to mph",
+    "platform": "web-chrome-headless",
+    "tags": [
+      "google",
+      " conversion",
+      "mph",
+      "kmh"
+    ],
+    "dataset": {
+      "id": "611e5fc5e4e7e251588b4b9d",
+      "name": "Google conversion dataset - 1",
+      "description": "Some dataset for testing",
+      "content": {
+        "columns": [
+          "kmh",
+          "mph"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.62"
+          ],
+          [
+            "20",
+            "error here"
+          ]
+        ]
+      }
+    },
+    "recordingStepList": [
+      {
+        "id": "116cf3b3-edfb-482d-8640-68c564a3f273",
+        "payload": {
+          "verb": "navigateTo",
+          "url": "https://google.ch"
+        },
+        "mappings": {}
+      },
+      {
+        "id": "62154c69-4614-4fb0-9273-2a5ea258b79a",
+        "payload": {
+          "verb": "click",
+          "elementSuperLocator": {
+            "id": null,
+            "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAwAGsDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDqbjUbS2lMc0wVwMkYJx+VRf2zYf8APf8A8cb/AArC1v8A5Cs//Af/AEEVQrthh4uKbOd1WnY6z+2bD/nv/wCON/hR/bNh/wA9/wDxxv8ACuToqvq0O7F7aR1n9s2H/Pf/AMcb/Cj+2bD/AJ7/APjjf4VydFH1aHdh7aR1n9s2H/Pf/wAcb/Cj+2bD/nv/AOON/hXJ0UfVod2HtpHWf2zYf89//HG/wo/tmw/57/8Ajjf4VydFH1aHdh7aR1n9s2H/AD3/APHG/wAKP7ZsP+e//jjf4VydFH1aHdh7aR1n9s2H/Pf/AMcb/CrsbrKiuhDKwyCO9cNXWaJ/yCoP+Bf+hGsa1GMI3RcJuTszC1v/AJCs/wDwH/0EVQq/rf8AyFZ/+A/+giqFdtP4F6GEviYUUUVYh8kTxbfMUruUMue4PemVf1T/AJc/+vVP61fe0iW3nheJA0UO7CxklSBnJfvn0/wrL2lkmyuXUwaK3HhVftUQtY/IjgLRy7Mljgc7u/f8qfKlub25TyYkFuuVCxbic4ySM84/TNL2q7D5DAord+z23mySlArCEOFMPBySC2zP0/nWfqkaRzoY02B4wxG3bk5PIHb6U41FJ2E42VylRRRWpIV1mif8gqD/AIF/6Ea5Ous0T/kFQf8AAv8A0I1y4n4F6mtH4jC1v/kKz/8AAf8A0EVQq/rf/IVn/wCA/wDoIqhW9P4F6GcviYUUUVYhzu77d7M20bRk5wPSn/aZygTzpNoG0LvOMelRUUrILl+XUi9uY0hEbMu1irHbjvhegziqnnS+b5vmv5n9/cc/nUdFJRS2G22SefL5vm+a/mf39xz+dNd2kYs7FmPUsck02inZCCiiimAV1mif8gqD/gX/AKEa5Ous0XjSoP8AgX/oRrlxPwL1NaPxH//Z",
+            "asString": "<button class=\"tHlp8d\" id=\"L2AGLb\" data-ved=\"0ahUKEwiJq67YmL3yAhX2Q_EDHchHDlUQiZAHCB8\"><div class=\"jyfHyd\" role=\"none\">I agree</div></button>",
+            "locators": [
+              {
+                "type": "id",
+                "query": "L2AGLb"
+              },
+              {
+                "type": "text",
+                "query": "button:I agree"
+              },
+              {
+                "type": "xpath",
+                "query": "//button[@id=\"L2AGLb\"]"
+              }
+            ],
+            "tags": [
+              "click",
+              "click",
+              "click",
+              "click",
+              "click",
+              "click",
+              "click",
+              "click",
+              "click",
+              "click"
+            ],
+            "bounds": {
+              "x": 975.0,
+              "y": 840.0,
+              "height": 48.0,
+              "width": 107.59375,
+              "size": 5164.5
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "62d1bd16-9009-4b1b-9b22-90c814c146de",
+        "payload": {
+          "verb": "write",
+          "text": "unit converter",
+          "elementSuperLocator": {
+            "id": null,
+            "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAiAecDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDs6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=",
+            "asString": "<input class=\"gLFyf gsfi\" jsaction=\"paste:puy29d;\" maxlength=\"2048\" name=\"q\" type=\"text\" aria-autocomplete=\"both\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" autofocus=\"\" role=\"combobox\" spellcheck=\"false\" title=\"Search\" value=\"\" aria-label=\"Search\" data-ved=\"0ahUKEwiJq67YmL3yAhX2Q_EDHchHDlUQ39UDCAQ\">",
+            "locators": [
+              {
+                "type": "id",
+                "query": null
+              },
+              {
+                "type": "text",
+                "query": "input:"
+              },
+              {
+                "type": "xpath",
+                "query": "/html[1]/body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]"
+              }
+            ],
+            "tags": [
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert"
+            ],
+            "bounds": {
+              "x": 716.0,
+              "y": 382.0,
+              "height": 34.0,
+              "width": 487.0,
+              "size": 16558.0
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "d7af1cb0-aae8-408e-8a18-036642b14386",
+        "payload": {
+          "verb": "press",
+          "key": "ENTER",
+          "elementSuperLocator": {
+            "id": null,
+            "screenshot": "data:image/jpeg;base64,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",
+            "asString": "<input class=\"gLFyf gsfi\" jsaction=\"paste:puy29d;\" maxlength=\"2048\" name=\"q\" type=\"text\" aria-autocomplete=\"both\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" autofocus=\"\" role=\"combobox\" spellcheck=\"false\" title=\"Search\" value=\"\" aria-label=\"Search\" data-ved=\"0ahUKEwiJq67YmL3yAhX2Q_EDHchHDlUQ39UDCAQ\">",
+            "locators": [
+              {
+                "type": "id",
+                "query": null
+              },
+              {
+                "type": "text",
+                "query": "input:unit converter"
+              },
+              {
+                "type": "xpath",
+                "query": "/html[1]/body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]"
+              }
+            ],
+            "tags": [
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert"
+            ],
+            "bounds": {
+              "x": 716.0,
+              "y": 382.0,
+              "height": 34.0,
+              "width": 438.0,
+              "size": 14892.0
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "523038da-3c62-4701-8c48-f595e41f77fa",
+        "payload": {
+          "verb": "select",
+          "selection": {
+            "option": "Speed",
+            "elementSuperLocator": {
+              "id": null,
+              "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgAcEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDsKKparI8cEJjYqTcwqSDjILgEUmp6kmnrCD5ZeZyq+Y+xRgEkk4Pp6d6AL1FY9vrcl20MdrbRySOZQ2ZiEXYV5ztyQQwxxSwazNdwo9pZb28nzZFeXbt5ICjg5OVb0HA9aANeiucn1S9mjmmiTCGK0ljRZMNl3GVzjvyOvYepxr2V7JcT3NvPCsU1uVzsfepDDIIOB79qALlFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUjEhCVG4gcD1oAWkf7jfSqVlJqBmcXkKhGOVKsPl9verr/cb6UASUUUUAVL20W9t/KeSSP5lcNGQGBByMZB7iq/8AZIKASXl1JIjh45WZd0Z6ccYwQSCCDV/d7N+Ro3ezfkaAKtvp0UEkUgeR3jVxudslixBJPv8AKOlZlzo08SpHYYMflGMs0xRjkk4bAOV57YPXnmt3d7N+Ro3ezfkaAM6LRYkjiVppCUihjbbgK3lsGU4we49eh/GrcVpHFd3FypYvPt3AngbRgYqbd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaKTd7N+Ro3ezfkaAFopN3s35Gjd7N+RoAWik3ezfkaN3s35GgBaRlDoVOcEYODijd7N+Ro3ezfkaAKNjpzW0zySXEkvPyBnOAPf3q8/3G+lG72b8jSMcqQA3T0NAEtFFFAH//2Q==",
+              "asString": "<select jsname=\"MVliGc\" class=\"rYVYn LNn04b gsrt\" jsaction=\"change:scGLuf\" data-ved=\"2ahUKEwirkMnzmL3yAhW5g_0HHQIPB-gQ6WowAHoECAIQAg\"> <option value=\"Area\">Area</option><option value=\"Data Transfer Rate\">Data Transfer Rate</option><option value=\"Digital Storage\">Digital Storage</option><option value=\"Energy\">Energy</option><option value=\"Frequency\">Frequency</option><option value=\"Fuel Economy\">Fuel Economy</option><option selected=\"1\" value=\"Length\">Length</option><option value=\"Mass\">Mass</option><option value=\"Plane Angle\">Plane Angle</option><option value=\"Pressure\">Pressure</option><option value=\"Speed\">Speed</option><option value=\"Temperature\">Temperature</option><option value=\"Time\">Time</option><option value=\"Volume\">Volume</option> </select>",
+              "locators": [
+                {
+                  "type": "id",
+                  "query": null
+                },
+                {
+                  "type": "text",
+                  "query": "select:Length"
+                },
+                {
+                  "type": "xpath",
+                  "query": "//div[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]"
+                }
+              ],
+              "tags": [
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select"
+              ],
+              "bounds": {
+                "x": 198.0,
+                "y": 204.0,
+                "height": 32.0,
+                "width": 449.0,
+                "size": 14368.0
+              }
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "f55e2adc-5bae-4cad-9764-ad1ca821d9e1",
+        "payload": {
+          "verb": "select",
+          "selection": {
+            "option": "Kilometer per hour",
+            "elementSuperLocator": {
+              "id": null,
+              "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgANMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDsKKz9b846eUt5WileREVwcYywH9ao3WpS3EulmBzGjvG0wU92JAX/AMdfP0FAG9RWRa64LuRFjji/elhGPN+bgEjcNvAOO2cZFRprUkVtbCVImma2WZi82wNnpj5epwfQD1oA26KoWeoteXJSKACJURy7vhsMuRxj8+abcalLFNdKlurxWqB5GMmCQQTwMcnj1FAGjRWTJrsSXEiARGOOURsfMIcnjJC45Az69jV2zuJbkys0KxxrIyIQ+S21iCcY46etAFmisldbxPMksKoIRIWAl/eALk52kDIIHYmmJr48p2eJCwi8xVil385A2ngYOWHr3oA2aKoveXUZWOS0TzZHCR4myjcEk5xkYAPb0qEarObiO2FoouGd0YNL8qlQDnOMkEMO1AGpRWXHqk9yAtvZhpBGzyK0u0KQxXAODkkqfTpVvTXaTTLR3YszQoSScknaKALNFFFABRRRQAUUUUAFFFFABRRRQAUVQgl1E3jGa3UW7cABhlff3q/QAsf3fxP86KI/u/if50UARXEC3CKrkgK6uMeqkEfyqqNJtwxILgm5+09R9706dOvHvV3d7N+Ro3ezfkaAKkGmxQSoySS+XGSY4d3yIT1wMfXqTjPFRrpMaRIkdzcoUj8rcrgFk7A8ds8Ec+9X93s35Gjd7N+RoAgt7OK2lkkjLZkVFIJyAFGB71Uk0oz391LLK6wTKilI2xvA6huOn0Pc1pbvZvyNG72b8jQBUbTomuGlEkqK7h3iVgEdh3PGfToecc1YghWBCiEkF2fn1Zix/U0/d7N+Ro3ezfkaAKQ0qAybpHlkQb9sTt8q7uGxxnoT1J60LpcO10mkmnRo/LCyPkKvtjHPTk88Dmru72b8jRu9m/I0AUv7KjOWa4uGm3KwmLjcu0EADAxjluMc5OadFpkMU0UwaRpIy7FmI+ctjJPHsOmKt7vZvyNG72b8jQBS/sqEY2SSxt8wZlYAsrMWKnjpknGOR61at4Vt7eKBCSsaBAT1wBin7vZvyNG72b8jQAtFJu9m/I0bvZvyNAC0Um72b8jRu9m/I0ALRSbvZvyNG72b8jQAtFJu9m/I0bvZvyNAC0Um72b8jRu9m/I0AUINMMV40rXErxDlELng+9aFJu9m/I0bvZvyNADo/u/if50UIMLz70UAf//Z",
+              "asString": "<select jsname=\"De9Fne\" class=\"OR9QXc LNn04b gsrt\" id=\"ssSucf\" jsaction=\"change:gurIfe\" data-ved=\"2ahUKEwirkMnzmL3yAhW5g_0HHQIPB-gQ5mowAHoECAIQBA\">  <option>kilometre</option><option selected=\"1\">Meter</option><option>Centimeter</option><option>Millimetre</option><option>micrometres</option><option>Nanometre</option><option>Mile</option><option>Yard</option><option>Foot</option><option>Inch</option><option>Nautical mile</option>  </select>",
+              "locators": [
+                {
+                  "type": "id",
+                  "query": "ssSucf"
+                },
+                {
+                  "type": "text",
+                  "query": "select:Meter per second"
+                },
+                {
+                  "type": "xpath",
+                  "query": "//select[@id=\"ssSucf\"]"
+                }
+              ],
+              "tags": [
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select"
+              ],
+              "bounds": {
+                "x": 198.0,
+                "y": 299.0,
+                "height": 32.0,
+                "width": 211.0,
+                "size": 6752.0
+              }
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "f187a10f-48ea-4227-bee7-eff3a6b08b3a",
+        "payload": {
+          "verb": "select",
+          "selection": {
+            "option": "Miles per hour",
+            "elementSuperLocator": {
+              "id": null,
+              "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAgANMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDsKKy/EL3CWUQtJGjmedEUg46/0qCXUHur7TWt3ZIW2tIobqXViAfptP5igDborHg1z7SyrHFHmVWMeJcsCASN4xxkDtnFRrrckNpbiVInmNssrF5tm7PTHy9Tj2A9aANyiqFnqL3ty6xW4WBAhMjPhjuQMMLj355ps+pTRS3e21Dw2mDI/m4JG0McDHUA9yKANGisn+3E+1tEEj2LN5JzJ85OQM7cdM+/bNXbK5luld2iWOMOyIQ+4ttYgkjAx096ALNFZMWt7mn8yBUEKOzL5n7xdvqpA6j0JFNTXc+YpgR5Aisghl3BiWC7SSBg5I9f0oA2KKz3v7mOVIJLRFnlcrH++yjALknOMjGMYxTE1SaWZIIrVTNukVw0uFQpt77eQQw7UAadFZSarNd24a0tdzeR5jhpNu05IAHBycq3p0q5prtJplo7sWZoUJJOSTtFAFmiiigAooooAKKKKACiiigAooooAKKoQS6ibxjNbqLduAAwyvv71foAWP7v4n+dFEf3fxP86KAILq1S6EQkLDypFlG09x0/CoIdKt4TlC4/0g3HUfeIIx06YNXN3s35Gjd7N+RoAqQabFA6ESzNHGCI4mf5UB/U/iTio10iNI40S5uU2x+UWVwCyA8A8dsnBGD71f3ezfkaN3s35GgCG3tI7Z5WjLfvCpIJzjChR+gqodL828u5JpXEU7KTGjcOAoGG49QenUda0d3s35Gjd7N+RoAqHTovP8xZJUQyea0SthGb1PGffGcVYt4FtovLQkjczc+rMSf50/d7N+Ro3ezfkaAKI0i3LDzXlmRVdUSRshA3DYPXpxyTSjS4ijrNNPPuUIDI/KgHIxjHOQDnrxV3d7N+Ro3ezfkaAKR0qIkyNNMbjcGE+RvGBgAcYxgnjHc1Jb6fDbvG6Fi6B8knlyxBJPv8oqzu9m/I0bvZvyNAFBdIhSNEjlmQKpRirAF1JJwePc8jB561ct4Vt7eKBCSsaBAT1wBin7vZvyNG72b8jQAtFJu9m/I0bvZvyNAC0Um72b8jRu9m/I0ALRSbvZvyNG72b8jQAtFJu9m/I0bvZvyNAC0Um72b8jRu9m/I0AUINMMV40rXErxDlELng+9aFJu9m/I0bvZvyNADo/u/if50UIMLz70UAf/Z",
+              "asString": "<select jsname=\"iNUlwe\" class=\"OR9QXc LNn04b gsrt\" jsaction=\"change:HtjH7c\" data-ved=\"2ahUKEwirkMnzmL3yAhW5g_0HHQIPB-gQ6GowAHoECAIQBg\">  <option>kilometre</option><option>Meter</option><option selected=\"1\">Centimeter</option><option>Millimetre</option><option>micrometres</option><option>Nanometre</option><option>Mile</option><option>Yard</option><option>Foot</option><option>Inch</option><option>Nautical mile</option>  </select>",
+              "locators": [
+                {
+                  "type": "id",
+                  "query": null
+                },
+                {
+                  "type": "text",
+                  "query": "select:Meter per second"
+                },
+                {
+                  "type": "xpath",
+                  "query": "//div[@id=\"NotFQb\"]/select[1]"
+                }
+              ],
+              "tags": [
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select",
+                "click",
+                "assert",
+                "select"
+              ],
+              "bounds": {
+                "x": 436.0,
+                "y": 299.0,
+                "height": 32.0,
+                "width": 211.0,
+                "size": 6752.0
+              }
+            }
+          }
+        },
+        "mappings": {}
+      },
+      {
+        "id": "e220889e-6488-4672-b43d-fda1bd2701ce",
+        "payload": {
+          "verb": "write",
+          "text": "120",
+          "elementSuperLocator": {
+            "id": null,
+            "screenshot": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAsANMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDs6KKKACiiigAooooAKKKKACiiigAooooAKKq6hqFtpts093IEUdB3Y+gHc1U8Pas+s2ctw8ax7ZiiqDnjAIz780AatFFFABRRRQAUUUUAFFFFABRRRQAUUUUANT7v4n+dFCdPxP8AOigB1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAV7mwtbuaGW4hWV4c+Xu5C5xnjp2FYPgP/kDz/wDXy3/oK101YfhPT7rTdNlhvI/LkacuBuByNqjPH0NAG5RRRQAUUUUAFFFFABRRRQAUUUUAFFFFADU6fif50UJ0/E/zooAdRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAfRTOf75/Sjn++f0oAVOn4n+dFEf3fxP8AOigD/9k=",
+            "asString": "<input jsname=\"axsL6b\" class=\"vXQmIe gsrt\" value=\"1\" jsaction=\"change:EZJzEd;keyup:EZJzEd;E5Xt6c\" data-ved=\"2ahUKEwirkMnzmL3yAhW5g_0HHQIPB-gQ5WowAHoECAIQAw\">",
+            "locators": [
+              {
+                "type": "id",
+                "query": null
+              },
+              {
+                "type": "text",
+                "query": "input:1"
+              },
+              {
+                "type": "xpath",
+                "query": "//div[@id=\"HG5Seb\"]/input[1]"
+              }
+            ],
+            "tags": [
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert"
+            ],
+            "bounds": {
+              "x": 198.0,
+              "y": 256.0,
+              "height": 44.0,
+              "width": 211.0,
+              "size": 9284.0
+            }
+          }
+        },
+        "mappings": {
+          "text": "kmh"
+        }
+      },
+      {
+        "id": "71189158-4fb1-4953-88a1-aa6bae977f5a",
+        "payload": {
+          "verb": "assert",
+          "elementSuperLocator": {
+            "id": null,
+            "screenshot": "data:image/jpeg;base64,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",
+            "asString": "<input jsname=\"fPLMtf\" class=\"vXQmIe gsrt\" value=\"100\" jsaction=\"change:BU5ZSb;keyup:BU5ZSb;JhXybc\" data-ved=\"2ahUKEwirkMnzmL3yAhW5g_0HHQIPB-gQ52owAHoECAIQBQ\">",
+            "locators": [
+              {
+                "type": "id",
+                "query": null
+              },
+              {
+                "type": "text",
+                "query": "input:74.5645"
+              },
+              {
+                "type": "xpath",
+                "query": "//div[@id=\"NotFQb\"]/input[1]"
+              }
+            ],
+            "tags": [
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert",
+              "click",
+              "write",
+              "assert"
+            ],
+            "bounds": {
+              "x": 436.0,
+              "y": 256.0,
+              "height": 44.0,
+              "width": 211.0,
+              "size": 9284.0
+            }
+          },
+          "assertFunction": "contains",
+          "expression": "74.56"
+        },
+        "mappings": {
+          "expression": "mph"
+        }
+      }
+    ]
+  }
+]

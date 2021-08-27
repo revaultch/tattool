@@ -1,0 +1,1 @@
+An attempt to replace VUEX with https://vueschool.io/articles/vuejs-tutorials/state-management-with-composition-api/

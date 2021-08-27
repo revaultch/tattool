@@ -1,0 +1,14 @@
+{
+  "click" : [
+    {
+      "id" : "abcd-defg-hijkl-mnop",
+      "image": "base64:skjeflwkfjelwejfoiafuhewfiuhwefFEWEF",
+      "selectors" : {
+        "id": "xyz",
+        "text": "whatever text",
+        "parentId": "xxx/0",
+        "xpath": "//a/b/c"
+      }
+    }
+  ]
+}

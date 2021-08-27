@@ -1,0 +1,52 @@
+version: "3"
+services:
+
+  chrome1:
+    image: selenium/node-chrome:4.0.0-beta-3-20210426
+    shm_size: 4g
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_GRID_URL=http://selenium-hub:4444
+      - JAVA_OPTS=-Dwebdriver.chrome.whitelistedIps=
+      - TMPDIR=/dev/shm/
+    ports:
+      - "6900:5900"
+      - "9255:9222"
+  #    platform: linux/amd64
+
+  chrome2:
+    image: selenium/node-chrome:4.0.0-beta-3-20210426
+    shm_size: 4g
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - SE_NODE_GRID_URL=http://selenium-hub:4444
+      - JAVA_OPTS=-Dwebdriver.chrome.whitelistedIps=
+      - TMPDIR=/dev/shm/
+    ports:
+      - "6901:5900"
+      - "9256:9222"
+  #   platform: linux/amd64
+
+
+  selenium-hub:
+    image: selenium/hub:4.0.0-beta-3-20210426
+    shm_size: 4g
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+#    platform: linux/amd64

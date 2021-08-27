@@ -1,0 +1,74 @@
+todo:
+[x] styling delete popup
+[x] when updating -> if new, replay previous all first
+[x] dataset selection in recording
+[x] testing app
+[x] refactor dataset UI
+[x] copy ref to clipboard (to run from command-line)
+[x] refactor web-target (more logs - visible - compare with last run for recording instance )
+  [x] add logs
+  [x] reduce screenshot size
+  
+[x] run from interface
+  [x] recording
+    [x] running status
+    [x] recording / recording instance header
+    [x] on error detail (screenshot ?)
+    [x] on finish => redirect to run viewer main
+  [ ] recording filter 
+
+[~] refactor / review concept for web-target (platform/web)
+
+[x] run detail
+[x] assert support all elements with text as well
+
+[x] live-run header (missing data)
+[x] run from command-line (link to run)
+[x] menu display highlight - bugs
+
+
+[ ] code cleanup 
+  [ ] backend
+  [ ] frontend
+[ ] e2e tests
+[ ] validate all tests
+[ ] execution log ?
+[~] basic scenario w/testing app
+
+[x] document github
+  [x] video 3 steps 
+    [x] recording
+    [x] dataset
+    [x] map recording w/dataset
+    [x] play from interface
+    [x] play from command-line
+
+[ ] copyright mentions (icons8)
+
+[ ] convert fully to TS
+
+nth :
+[ ] dashboard
+[ ] configuration web-target / settings
+[ ] login
+[ ] session provider
+[~] show debug on live-run (+warning if no screenshot)
+[~] run list (in dashboard) - loading ... + status
+
+
+
+bug-fix :
+[x] close session after edit ends
+[ ] reset session when multiple rows played (reprod : delete 1st row with navigateTo ... will still work ok) (about blank ?)
+[x] list item heights (datasets / recording filter / recording)
+[ ] menu highlights recording when new recordingfilter
+[x] reset of mapping column:null -> makes test run hang
+[x] resolve client test doubles ? (group by id + status ?)
+[ ] sometimes webdriver issues when cleanup - "Timed out waiting for driver server to stop."
+[x] dataset + not working properly  
+
+[ ] when deleting runs -> if no recording exists ?
+[ ] when deleting dataset -> ?
+
+[x] dataset row not sync in report with instance
+[ ] alert handling 

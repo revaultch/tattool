@@ -1,0 +1,57 @@
+pipeline {
+    agent {
+        docker { image 'maven:3.8.1-openjdk-11' }
+    }
+    stages {
+        stage('build') {
+            steps {
+                dir("backend") {
+                    sh 'mvn clean install -DskipTests'
+                }
+            }
+        }
+        stage('Tests') {
+            parallel {
+                stage('core tests') {
+                    steps {
+                        dir("backend") {
+                            sh 'mvn test -pl core'
+                        }
+                    }
+                }
+                stage('junit client tests') {
+                    steps {
+                        dir("backend") {
+                            sh 'mvn test -pl client'
+                        }
+                    }
+                }
+                stage('server tests') {
+                    steps {
+                        dir("backend") {
+                            sh 'mvn test -pl server'
+                        }
+                    }
+                }
+                stage('web-target tests') {
+                    steps {
+                        dir("backend") {
+                            sh 'mvn -X test -pl web-target'
+                        }
+                    }
+                }
+            }
+        }
+    }
+    post {
+       success {
+           slackSend color: "good", message: "Build was successful"
+       }
+       failure {
+           slackSend color: "danger", message: "Build failed"
+       }
+       always {
+           slackSend color: "good", message: "Build finished"
+       }
+    }
+}
