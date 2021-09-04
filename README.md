@@ -2,6 +2,13 @@
 
 A **toolkit** for building collaborative custom in-house QA automation solutions
 
+
+**⚠️⚠️⚠️ WARNING ⚠️⚠️⚠️** 
+
+Experimental **WORK IN PROGRESS** 
+
+Any type of help would be greatly appreciated. Consider looking into issues list.
+
 ![Backend CI](https://github.com/borjafernandez/tattool/actions/workflows/backend-unit-intg-test.yaml/badge.svg)
 
 ![Frontend CI](https://github.com/borjafernandez/tattool/actions/workflows/frontend-component-test.yaml/badge.svg)
