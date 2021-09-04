@@ -68,8 +68,6 @@
           v-if="sessionId"
           :commandDescriptors="currentPlatform.availableCommands"
           :recording="dirtyRecording"
-          :validationService="validationService"
-          :contextService="contextService"
           @change="handleRecordingStepsChanged($event)"
           @validation-failure="handleValidationFailure($event)"
           @validation-success="handleValidationSuccess($event)"
@@ -100,7 +98,7 @@ import useSession from "@/state/useSession";
 import usePlatform from "@/state/usePlatform";
 import { Recording } from "@/model/transport/Recording";
 import RecordingStepsEditor from "@/components/recordings/editor/input-panel/recording-step/RecordingStepsEditor.vue";
-import useSessionContext from "@/state/useSessionContext";
+
 import useUIState from "@/state/useUIState";
 import useDataset from "@/state/useDataset";
 import { ValidationResult } from "@/services/payload/ValidationService";
@@ -117,8 +115,6 @@ export default defineComponent({
     };
 
     const router = useRouter();
-    const { defaultValidationService, defaultContextService } =
-      useSessionContext();
 
     const { loadAvailablePlatforms, availablePlatforms, currentPlatform } =
       usePlatform();
@@ -273,8 +269,6 @@ export default defineComponent({
       atLeastOnePlatformAvailable,
       moreThanOnePlatformAvailable,
       exactlyOnePlatformAvailable,
-      validationService: defaultValidationService,
-      contextService: defaultContextService,
     };
   },
 });

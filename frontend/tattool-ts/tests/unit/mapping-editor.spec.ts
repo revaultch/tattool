@@ -3,10 +3,8 @@ import { mount } from '@vue/test-utils'
 import MappingEditor from '@/components/recordings/editor/input-panel/recording-step/MappingEditor.vue';
 
 const mountWithProps = (p: any) => mount(MappingEditor, {
-  props: p
+  props: p,
 } as any);
-
-
 
 
 describe('MappingEditor.vue', () => {
@@ -16,7 +14,7 @@ describe('MappingEditor.vue', () => {
     const wrapper = mountWithProps({
       mappableColumns: ["col1", "col2", "col3"],
       value: null,
-      readOnly: true
+      readOnly: true,
     });
     // when
     await wrapper.find(".map").trigger("click");

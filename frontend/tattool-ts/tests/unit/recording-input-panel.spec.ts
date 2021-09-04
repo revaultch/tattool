@@ -6,6 +6,11 @@ import sinon from 'sinon';
 import { Recording } from '@/model/transport/Recording';
 import { recordingStepList } from '@/../tests/mocks/MockData';
 
+import { ContextService } from '@/services/payload/ContextService';
+import { ValidationService } from '@/services/payload/ValidationService';
+import { ContextServiceMock } from "@/../tests/mocks/ContextServiceMock";
+import { ValidationServiceMock } from '@/../tests/mocks/ValidationServiceMock';
+
 const recording = {
   id: "1",
   name: "hola",
@@ -15,10 +20,26 @@ const recording = {
   recordingStepList: recordingStepList.map((item) => ({ ...item, ...{ mappings: { x: "y" } } }))
 } as Recording;
 
+
+const contextService: ContextService = new ContextServiceMock();
+const validationService: ValidationService = new ValidationServiceMock();
+
 const props = {
 }
 
-const mountWithProps = (propsInput: any) => shallowMount(RecordingInputPanel, { props: propsInput } as any);
+
+/*
+
+TO BE FIXED
+
+const mountWithProps = (propsInput: any) => shallowMount(RecordingInputPanel, {
+  props: propsInput, global: {
+    provide: {
+      'contextService': contextService,
+      'validationService': validationService
+    }
+  }
+} as any);
 
 describe('RecorderInputPanel.vue', () => {
 
@@ -27,9 +48,6 @@ describe('RecorderInputPanel.vue', () => {
     sinon.restore()
   });
 
-  /*
-
-  TODO redesign to fix this
 
   it('should clear mappings upon dataset change', () => {
     // given
@@ -46,9 +64,9 @@ describe('RecorderInputPanel.vue', () => {
     expect(vm.dirtyRecording.recordingStepList[0].mappings).deep.eq({});
 
   });
-*/
 
 
 
 
-});
+
+});*/

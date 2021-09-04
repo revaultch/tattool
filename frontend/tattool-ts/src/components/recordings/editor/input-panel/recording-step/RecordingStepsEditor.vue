@@ -10,8 +10,6 @@
         :recordingStep="recordingStep"
         :dataset="recording.dataset"
         :readOnly="true"
-        :contextService="contextService"
-        :validationService="validationService"
         @change="handleUpdateRecordingStep($event)"
       ></recording-step-editor>
       <div class="command-panel">
@@ -51,8 +49,6 @@
       <recording-step-editor
         :commandDescriptors="commandDescriptors"
         :recordingStep="newRecordingStep"
-        :contextService="contextService"
-        :validationService="validationService"
         @change="handleNewRecordingStepChange($event)"
       ></recording-step-editor>
       <div class="command-panel-new">
@@ -83,13 +79,12 @@
 <script lang="ts">
 import { CommandDescriptor } from "@/model/transport/CommandDescriptor";
 import { RecordingStep } from "@/model/transport/RecordingStep";
-import { defineComponent, ref, PropType } from "vue";
+import { defineComponent, ref, PropType, inject } from "vue";
 import RecordingStepEditor from "./RecordingStepEditor.vue";
 import {
   ValidationService,
   ValidationResult,
 } from "@/services/payload/ValidationService";
-import { ContextService } from "@/services/payload/ContextService";
 import { generateUUID } from "@/utils/UUIDUtil";
 import { Recording } from "@/model/transport/Recording";
 import ActionIcon from "@/components/common/ActionIcon.vue";
@@ -106,14 +101,6 @@ export default defineComponent({
       type: Object as PropType<Recording>,
       required: true,
     },
-    validationService: {
-      type: Object as PropType<ValidationService>,
-      required: true,
-    },
-    contextService: {
-      type: Object as PropType<ContextService>,
-      required: true,
-    },
   },
   emits: ["change", "validation-failure", "validation-success"],
   setup(props, { emit }) {
@@ -121,6 +108,7 @@ export default defineComponent({
       state: boolean;
       id: string | null;
     }
+    const validationService = inject<ValidationService>("validationService")!;
     const firstValidationCall = ref(true);
     const newRecordingStep = ref<RecordingStep | null>(null);
     const newRecordingValidationError = ref(false);
@@ -134,7 +122,7 @@ export default defineComponent({
     });
 
     const handlePlayNew = () => {
-      props.validationService
+      validationService
         .validate([newRecordingStep.value as RecordingStep])
         .then((validationResult: ValidationResult) => {
           if (validationResult.success) {
@@ -176,7 +164,7 @@ export default defineComponent({
             }
           }
         );
-      await props.validationService
+      await validationService
         .validate(listToValidate)
         .then((validationResult: ValidationResult) => {
           if (validationResult.success) {
@@ -247,7 +235,7 @@ export default defineComponent({
         props.recording.recordingStepList!.filter(
           (recordingStep: RecordingStep) => recordingStep.id !== id
         );
-      await props.validationService
+      await validationService
         .validate(listToValidate)
         .then((validationResult: ValidationResult) => {
           if (validationResult.success) {

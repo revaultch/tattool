@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, PropType } from "vue";
+import { defineComponent, ref, PropType, inject } from "vue";
 import {
   CommandDescriptor,
   findCommandDescriptorByName,
@@ -63,19 +63,16 @@ export default defineComponent({
       required: false,
       default: false,
     },
-    contextService: {
-      type: Object as PropType<ContextService>,
-      required: true,
-    },
   },
   emits: ["change"],
   setup(props, { emit }) {
     const selectedCommandDescriptor = ref<CommandDescriptor | null>(null);
     const contextData = ref<any | null>(null);
+    const contextService = inject<ContextService>("contextService")!;
 
     const availableCommandDescriptors = ref([] as Array<CommandDescriptor>);
 
-    props.contextService
+    contextService
       .getAvailableCommandDescriptorsInContext()
       .then((descriptors) => {
         availableCommandDescriptors.value = descriptors;
@@ -92,13 +89,11 @@ export default defineComponent({
     ) => {
       if (commandDescriptor != null) {
         // get context for command & set command descriptor for payload editor
-        props.contextService
-          .getContext(commandDescriptor.name)
-          .then((result) => {
-            contextData.value = result;
-            selectCommandDescriptor(commandDescriptor);
-            handlePayloadChange({});
-          });
+        contextService.getContext(commandDescriptor.name).then((result) => {
+          contextData.value = result;
+          selectCommandDescriptor(commandDescriptor);
+          handlePayloadChange({});
+        });
       } else {
         selectCommandDescriptor(null);
       }
