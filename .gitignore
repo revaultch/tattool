@@ -1,2 +1,16 @@
 backend/parent.iml
 backend/parent.ipr
+.DS_Store
+.idea
+parent.iws
+validation.txt
+client.iml
+backend/client/.gradle
+backend/client/target
+backend/core/target
+backend/platform-web/target
+backend/server/target
+core.iml
+platform-web.iml
+web-target.iml
+server.iml
